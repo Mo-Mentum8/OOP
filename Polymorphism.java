@@ -44,8 +44,8 @@ public class Main {
         // Using Car object
         v = new Car();
         v.info();
-        v.info("Toyota");
-        v.info("Toyota", 2024, "purple", "unleaded", 1933);
+        v.info("BMW");
+        v.info("BMW", 2013, "Grey", "unleaded", 2013);
         v.speed();
 
         System.out.println();
@@ -54,7 +54,7 @@ public class Main {
         v = new Motorcycle();
         v.info();
         v.info("Honda");
-        v.info("Honda", 2020, "purple", "unleaded", 1933);
+        v.info("Honda", 2020, "black", "unleaded", 1933);
         v.speed();
     }
 }
