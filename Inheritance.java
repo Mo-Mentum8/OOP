@@ -25,11 +25,11 @@ class Car extends Vehicle {
 public class Main {
     public static void main(String[] args) {
         Car myCar = new Car();
-        myCar.brand = "Toyota";
-        myCar.model = "Vios";
-        myCar.color = "Purple";
+        myCar.brand = "BMW";
+        myCar.model = "M5 Sedan";
+        myCar.color = "Grey";
         myCar.gasoline = "Unleaded";
-        myCar.year_released = "1933";
+        myCar.year_released = "2013";
 
         myCar.start();
         myCar.displayInfo();
