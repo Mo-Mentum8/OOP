@@ -1,6 +1,6 @@
 // Abstract class
 abstract class Car {
-    String brand = "Toyota";
+    String brand = "BMW";
 
     abstract void startEngine();
     abstract void stopEngine();
@@ -10,34 +10,34 @@ abstract class Car {
     }
 }
 
-// Subclass Toyota Vios
-class ToyotaVios extends Car {
+// Subclass BMW M5 Sedan
+class BMWm5Sedan extends Car {
 
     @Override
     void startEngine() {
-        System.out.println("Toyota Vios engine started using push button.");
+        System.out.println("BMW M5 Sedan engine started using push button.");
     }
 
     @Override
     void stopEngine() {
-        System.out.println("Toyota Vios engine stopped when you stepped on the break.");
+        System.out.println("BMW M5 Sedan engine stopped when you stepped on the break pedal.");
     }
 
     void showModel() {
-        System.out.println("Model: Toyota Vios 2024");
+        System.out.println("Model: BMW M5 Sedan 2013");
     }
 }
 
 // Main class
 public class Main {
     public static void main(String[] args) {
-        Car myCar = new ToyotaVios();   // Abstraction + Polymorphism
+        Car myCar = new BMWm5Sedan();   // Abstraction + Polymorphism
 
         myCar.showBrand();
         myCar.startEngine();
         myCar.stopEngine();
 
-        // To access showModel(), cast to ToyotaVios
-        ((ToyotaVios) myCar).showModel();
+        // To access showModel(), cast to BMWm5Sedan
+        ((BMWm5Sedan) myCar).showModel();
     }
 }
